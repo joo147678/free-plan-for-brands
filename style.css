@@ -484,6 +484,15 @@ a:hover {
     .print-btn {
         display: none;
     }
+    
+    @page {
+        margin: 0;
+    }
+    
+    /* إخفاء التاريخ والوقت واسم الصفحة من الطباعة */
+    html {
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
