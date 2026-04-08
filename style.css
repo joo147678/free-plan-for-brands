@@ -440,6 +440,93 @@ h5 {
     margin-bottom: 10px;
 }
 
+.funnel-pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    gap: 0;
+}
+
+.pyramid-stage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+    margin: -5px 0;
+}
+
+.awareness-pyramid {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.consideration-pyramid {
+    width: 75%;
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+}
+
+.conversion-pyramid {
+    width: 50%;
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+}
+
+.pyramid-stage .stage-content {
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.pyramid-stage .stage-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+}
+
+.pyramid-stage h4 {
+    color: white;
+    font-size: 1.8em;
+    margin: 15px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.pyramid-stage .stage-desc {
+    color: rgba(255,255,255,0.95);
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 15px;
+}
+
+.pyramid-stage ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.pyramid-stage li {
+    padding: 8px 0;
+    color: white;
+    font-size: 1.05em;
+    position: relative;
+    padding-right: 25px;
+}
+
+.pyramid-stage li:before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.community-section {
+    margin-top: 40px;
+}
+
 .funnel-container {
     margin: 40px 0;
 }
@@ -452,21 +539,6 @@ h5 {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     border-right: 5px solid;
     position: relative;
-}
-
-.funnel-stage.awareness {
-    border-color: #667eea;
-    background: linear-gradient(135deg, #667eea10 0%, #667eea05 100%);
-}
-
-.funnel-stage.consideration {
-    border-color: #17a2b8;
-    background: linear-gradient(135deg, #17a2b810 0%, #17a2b805 100%);
-}
-
-.funnel-stage.conversion {
-    border-color: #28a745;
-    background: linear-gradient(135deg, #28a74510 0%, #28a74505 100%);
 }
 
 .funnel-stage.community {
@@ -494,14 +566,6 @@ h5 {
     margin-bottom: 20px;
     padding-bottom: 15px;
     border-bottom: 2px dashed #ddd;
-}
-
-.funnel-arrow {
-    text-align: center;
-    font-size: 3em;
-    color: #667eea;
-    margin: 10px 0;
-    font-weight: bold;
 }
 
 .competition-idea {
@@ -640,11 +704,20 @@ a:hover {
         margin: 0 auto 15px auto;
     }
     
-    .funnel-arrow {
-        font-size: 2em;
+    .pyramid-stage {
+        width: 100% !important;
+        clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
     }
     
-    .stage-icon {
-        font-size: 2em;
+    .pyramid-stage .stage-content {
+        padding: 20px 15px;
+    }
+    
+    .pyramid-stage h4 {
+        font-size: 1.4em;
+    }
+    
+    .pyramid-stage li {
+        font-size: 0.95em;
     }
 }
