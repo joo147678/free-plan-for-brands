@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #667eea;
+}
+
+.header h1 {
+    font-size: 3em;
+    color: #667eea;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.header h2 {
+    font-size: 2em;
+    color: #764ba2;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    font-size: 1.3em;
+    color: #666;
+    font-style: italic;
+    font-weight: 300;
+}
+
+section {
+    margin-bottom: 50px;
+    page-break-inside: avoid;
+}
+
+h3 {
+    font-size: 2em;
+    color: #667eea;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+h4 {
+    font-size: 1.5em;
+    color: #764ba2;
+    margin: 20px 0 15px 0;
+}
+
+h5 {
+    font-size: 1.2em;
+    color: #555;
+    margin: 15px 0 10px 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.info-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-right: 4px solid #667eea;
+}
+
+.products {
+    list-style: none;
+    padding: 0;
+}
+
+.products li {
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border-right: 3px solid #667eea;
+}
+
+.swot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.swot-box {
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.swot-box h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.strengths {
+    background: #d4edda;
+    border: 2px solid #28a745;
+}
+
+.strengths h4 {
+    background: #28a745;
+}
+
+.weaknesses {
+    background: #f8d7da;
+    border: 2px solid #dc3545;
+}
+
+.weaknesses h4 {
+    background: #dc3545;
+}
+
+.opportunities {
+    background: #d1ecf1;
+    border: 2px solid #17a2b8;
+}
+
+.opportunities h4 {
+    background: #17a2b8;
+}
+
+.threats {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+}
+
+.threats h4 {
+    background: #ffc107;
+    color: #333;
+}
+
+.swot-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.swot-box li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+}
+
+.swot-box li:before {
+    content: "•";
+    position: absolute;
+    right: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.persona-card {
+    background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #667eea;
+}
+
+.persona-details {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.persona-details p {
+    margin: 10px 0;
+}
+
+.problem-solution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.problem, .solution {
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.problem {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+}
+
+.solution {
+    background: #d4edda;
+    border: 2px solid #28a745;
+}
+
+.comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.comparison td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.comparison tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.comparison tr.highlight {
+    background: #d4edda;
+    font-weight: bold;
+}
+
+.content-types {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.content-type {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.percentage {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content-type h5 {
+    color: white;
+    margin: 10px 0;
+}
+
+.content-type p {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.video-specs {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    border-right: 4px solid #667eea;
+}
+
+.important-note {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.important-note p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.steps {
+    display: grid;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.step {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    border-right: 4px solid #667eea;
+    position: relative;
+    padding-right: 80px;
+}
+
+.step-number {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.budget-calc {
+    background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #667eea;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.formula {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #667eea;
+    margin: 15px 0;
+}
+
+.example {
+    font-size: 1.2em;
+    color: #764ba2;
+}
+
+.platform-strategy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.platform {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    border-right: 4px solid #667eea;
+}
+
+.influencer {
+    background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #667eea;
+    margin: 25px 0;
+}
+
+.influencer-tiers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.tier {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.month {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border-right: 4px solid #667eea;
+}
+
+.weeks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.week {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.priority-box {
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border-right: 4px solid;
+}
+
+.immediate {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+.medium {
+    background: #d1ecf1;
+    border-color: #17a2b8;
+}
+
+.long {
+    background: #fff3cd;
+    border-color: #ffc107;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 2px solid #eee;
+    color: #666;
+}
+
+.print-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+    z-index: 1000;
+}
+
+.print-btn:hover {
+    transform: scale(1.05);
+}
+
+ul, ol {
+    padding-right: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+    
+    .container {
+        box-shadow: none;
+        padding: 20px;
+    }
+    
+    .print-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .header h2 {
+        font-size: 1.5em;
+    }
+    
+    .problem-solution,
+    .platform-strategy,
+    .influencer-tiers,
+    .weeks {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-types {
+        flex-direction: column;
+    }
+    
+    .step {
+        padding-right: 25px;
+    }
+    
+    .step-number {
+        position: static;
+        margin: 0 auto 15px auto;
+    }
+}
